@@ -86,6 +86,9 @@ var CKBUILDER_CONFIG = {
 		templates: 1,
 		toolbar: 1,
 		undo: 1,
-		wysiwygarea: 1
+		wysiwygarea: 1,
+		wcsparlexepitoelem: 1,
+		wcsparlexhivatkozas: 1,
+		wcsparlexhighlight: 1
 	}
 };
