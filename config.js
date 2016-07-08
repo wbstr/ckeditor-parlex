@@ -64,9 +64,9 @@ CKEDITOR.editorConfig = function( config ) {
 		'templates,' +
 		'toolbar,' +
 		'undo,' +
-		'wysiwygarea' +
-		'wcsparlexepitoelem' +
-		'wcsparlexhivatkozas' +
+		'wysiwygarea,' +
+		'wcsparlexepitoelem,' +
+		'wcsparlexhivatkozas,' +
 		'wcsparlexhighlight';
 	// %REMOVE_END%
 };
