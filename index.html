@@ -1,0 +1,31 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="ckeditor.js"></script>
+	</head>
+	<body>
+		<textarea name="cke" id="cke" rows="10" cols="120">
+Lorem ipsum <span class="auto-hivatkozas" contenteditable="false" id="${1195}" style="background-color:#ddd">dolor</span> sit amet, <span class="auto-hivatkozas" contenteditable="false" id="${1195}" style="background-color:#ddd">consectetur adipiscing</span> elit. Proin a felis gravida, accumsan lectus et, condimentum tellus. Aenean id magna at eros molestie scelerisque sit amet in velit. Aliquam accumsan efficitur odio ut viverra. Praesent et est laoreet, dapibus purus vel, accumsan ante.
+		</textarea>
+		<script type="text/javascript">
+			CKEDITOR.replace('cke', {
+				language: 'hu',
+				enterMode: CKEDITOR.ENTER_BR,
+				entities: false,
+				extraAllowedContent: 'span[id,style,contenteditable](fix-hivatkozas,auto-hivatkozas){background-color}',
+				toolbar: [['WcsLinkAuto','WcsLinkFix','WcsUnlink']],
+				wcsparlexmessages: {
+					tooltipCreateFixLink: 'Fix hivatkozás létrehozása',
+					tooltipCreateAutoLink: 'Automatikus hivatkozás létrehozása',
+					tooltipUnlink: 'Hivatkozás törlése',
+					warningCreateFixLinkNoSelection: 'Fix hivatkozás létrehozásához ki kell jelölnie a szöveget!',
+					warningCreateFixLinkOnlyTextSelection: 'Fix hivatkozás létrehozásához csak szöveget jelölhet ki, hivatkozást nem!',
+					warningCreateAutoLinkHasSelection: 'Automatikus hivatkozás létrehozásához mozgassa a kurzort a kívánt helyre, de ne jelöljön ki semmit!',
+					warningUnlinkNoLinkSelected: 'Hivatkozás törléséhez előbb kattintson a hivatkozásra!',
+					warningUnlinkMultiSelection: 'Egyszerre csak egy hivatkozást törölhet!'
+				}
+			});
+		</script>
+	</body>
+</html>
