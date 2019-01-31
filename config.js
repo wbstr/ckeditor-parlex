@@ -10,6 +10,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.plugins =
 		'about,' +
 		'a11yhelp,' +
+		'autocorrect,' +
 		'basicstyles,' +
 		'bidi,' +
 		'blockquote,' +
